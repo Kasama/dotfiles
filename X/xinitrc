@@ -24,23 +24,23 @@ session=${1:-compiz}
 case $session in
 	compiz)
 		# Unlock gnome-keyring
-		eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+		#eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 		export SSH_AUTH_SOCK
 		# Run compiz as standalone WM
-		exec fusion-icon &
-		exec touchegg &
-		sleep 3s && exec xfce4-panel &
-		sleep 3s && exec sh ~/.fehbg &
-		#        sleep 5s && exec mate-volume-control-applet &
-		sleep 3s && exec volumeicon &
-		sleep 5s && exec nm-applet &
-		sleep 8s && exec xfce4-power-manager &
-		# sleep 10s && exec synapse --startup &
-		sleep 10s && exec albert &
-		#        sleep 20s && exec dropbox &
-		#        sleep 20s && exec megasync &
-		sleep 20s && exec thunar --daemon &
-		sleep 30s && exec xscreensaver -nosplash
+		( sleep 0s && exec touchegg ) &
+		( sleep 0s && exec xfce4-panel ) &
+		( sleep 0s && exec sh ~/.fehbg ) &
+		#( sleep 5s && exec mate-volume-control-applet ) &
+		( sleep 3s && exec volumeicon ) &
+		( sleep 5s && exec nm-applet ) &
+		( sleep 8s && exec albert ) &
+		( sleep 8s && exec xfce4-power-manager ) &
+		#( sleep 10s && exec synapse --startup ) &
+		#( sleep 20s && exec dropbox ) &
+		#( sleep 20s && exec megasync ) &
+		( sleep 20s && exec thunar --daemon ) &
+		( sleep 30s && exec xscreensaver -nosplash ) &
+		exec fusion-icon # compiz manager
 		;;
 	steam)
 		exec steam -bigpicture
