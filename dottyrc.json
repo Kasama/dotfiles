@@ -1,0 +1,29 @@
+{
+	"directories": [
+		"~/.config"
+		, "~/.config/terminator"
+	]
+	, "link": {
+		"prezto": "~/.zprezto"
+			, "prezto/runcoms/zlogin": "~/.zlogin"
+			, "prezto/runcoms/zlogout": "~/.zlogout"
+			, "prezto/runcoms/zpreztorc": "~/.zpreztorc"
+			, "prezto/runcoms/zprofile": "~/.zprofile"
+			, "prezto/runcoms/zshenv": "~/.zshenv"
+			, "prezto/runcoms/zshrc": "~/.zshrc"
+		, "nvim": "~/.config/nvim"
+			, "nvim": "~/nvim"
+		, "tmux": "~/tmux"
+			, "./tmux/tmux.conf": "~/.tmux-conf"
+		, "gtk-config": "~/.themes"
+		, "compiz-config": "~/.config/compiz"
+		, "emerald-config": "~/.emerald"
+		, "scripts": "~/scripts"
+		, "terminator/config": "~/.config/terminator/config"
+		, "git/gitconfig": "~/.gitconfig"
+		, "./X/xinitrc": "~/.xinitrc"
+		, "./X/xresources": "~/.Xresources"
+		, "./X/Xauthority": "~/.Xauthoritiy"
+		, "./yaourt/yaourtrc": "~/.yaourtrc"
+	}
+}

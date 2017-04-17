@@ -1,0 +1,21 @@
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:Kasama/nvim
+[submodule "prezto"]
+	path = prezto
+	url = git@github.com:Kasama/prezto
+[submodule "dotty"]
+	path = dotty
+	url = git@github.com:vibhavp/dotty
+[submodule "compiz-config"]
+	path = compiz-config
+	url = git@github.com:Kasama/compiz-config
+[submodule "emerald-config"]
+	path = emerald-config
+	url = git@github.com:Kasama/emerald-config
+[submodule "scripts"]
+	path = scripts
+	url = git@github.com:Kasama/scripts
+[submodule "tmux"]
+	path = tmux
+	url = git@github.com:Kasama/tmux
