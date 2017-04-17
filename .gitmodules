@@ -19,3 +19,6 @@
 [submodule "tmux"]
 	path = tmux
 	url = git@github.com:Kasama/tmux
+[submodule "gtk-config"]
+	path = gtk-config
+	url = git@github.com:Kasama/gtk-config
