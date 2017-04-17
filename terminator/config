@@ -1,6 +1,8 @@
 [global_config]
   enabled_plugins = InactivityWatch, CustomCommandsMenu, TestPlugin, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   focus = mouse
+  title_font = Source Code Pro Medium 12
+  title_use_system_font = False
 [keybindings]
   cycle_next = None
   cycle_prev = None
@@ -59,6 +61,7 @@
     audible_bell = True
     background_darkness = 0.71
     background_type = transparent
+    cursor_blink = False
     cursor_color = "#ffffff"
     custom_command = tmux
     font = Source Code Pro Semi-Bold 10
@@ -69,15 +72,32 @@
     show_titlebar = False
     use_system_font = False
   [[White]]
+    cursor_blink = False
     cursor_color = "#aaaaaa"
   [[noTmux]]
+    cursor_blink = False
     cursor_color = "#aaaaaa"
+  [[ocean]]
+    background_color = "#282828"
+    cursor_color = "#a2a2a2"
+    custom_command = tmux -2
+    font = Source Code Pro Semi-Bold 12
+    foreground_color = "#a2a2a2"
+    palette = "#555555:#9c3528:#61bc3b:#f3b43a:#0d68a8:#744560:#288e9c:#a2a2a2:#888888:#d64937:#86df5d:#fdd75a:#0f75bd:#9e5e83:#37c3d6:#f9f9f9"
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_custom_command = True
+    use_system_font = False
   [[screen]]
+    cursor_blink = False
     cursor_color = "#aaaaaa"
     custom_command = screen -U
   [[testFlat]]
     background_color = "#31363b"
+    cursor_blink = False
     cursor_color = "#ffffff"
+    cursor_color_fg = False
     custom_command = tmux -2
     font = Source Code Pro Semi-Bold 12
     foreground_color = "#ffffff"
