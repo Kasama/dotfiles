@@ -74,6 +74,8 @@
   [[White]]
     cursor_blink = False
     cursor_color = "#aaaaaa"
+  [[no-tmux]]
+    cursor_color = "#aaaaaa"
   [[noTmux]]
     cursor_blink = False
     cursor_color = "#aaaaaa"

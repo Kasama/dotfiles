@@ -24,7 +24,7 @@ session=${1:-compiz}
 case $session in
 	compiz)
 		# Unlock gnome-keyring
-		#eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+		eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 		export SSH_AUTH_SOCK
 		# Run compiz as standalone WM
 		( sleep 0s && exec touchegg ) &
