@@ -12,7 +12,6 @@
 			, "prezto/runcoms/zshenv": "~/.zshenv"
 			, "prezto/runcoms/zshrc": "~/.zshrc"
 		, "nvim": "~/.config/nvim"
-			, "nvim": "~/nvim"
 		, "tmux": "~/tmux"
 			, "./tmux/tmux.conf": "~/.tmux.conf"
 		, "gtk-config": "~/.themes"
@@ -26,4 +25,8 @@
 		, "./X/Xauthority": "~/.Xauthority"
 		, "./yaourt/yaourtrc": "~/.yaourtrc"
 	}
+	, "commands": [
+		"[[ ! -L ~/nvim ]] && ln -s ~/.config/nvim ~/nvim"
+	]
+
 }

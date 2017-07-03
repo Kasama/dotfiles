@@ -102,4 +102,4 @@ URxvt.letterSpace: -1
 !*.color7:       #d3d7cf
 !*.color15:      #eeeeec
 *.color7:       #d3d7cf
-*.color15:      #313131
+*.color15:      #555555
