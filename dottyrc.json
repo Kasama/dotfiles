@@ -24,6 +24,7 @@
 		, "./X/xresources": "~/.Xresources"
 		, "./X/Xauthority": "~/.Xauthority"
 		, "./yaourt/yaourtrc": "~/.yaourtrc"
+		, "./i3": "~/.config/i3"
 	}
 	, "commands": [
 		"[[ ! -L ~/nvim ]] && ln -s ~/.config/nvim ~/nvim"

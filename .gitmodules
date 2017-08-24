@@ -22,3 +22,6 @@
 [submodule "gtk-config"]
 	path = gtk-config
 	url = git@github.com:Kasama/gtk-config
+[submodule "i3"]
+	path = i3
+	url = ./i3

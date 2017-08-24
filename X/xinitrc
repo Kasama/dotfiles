@@ -19,7 +19,7 @@
 
 #exec fusion-icon
 
-session=${1:-compiz}
+session=${1:-i3}
 
 case $session in
 	compiz)
@@ -41,6 +41,9 @@ case $session in
 		( sleep 20s && exec thunar --daemon ) &
 		( sleep 30s && exec xscreensaver -nosplash ) &
 		exec fusion-icon # compiz manager
+		;;
+	i3)
+		exec i3
 		;;
 	steam)
 		exec steam -bigpicture
