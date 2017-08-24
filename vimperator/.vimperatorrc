@@ -1,0 +1,11 @@
+"3.16.0 (created: 2017/02/01 00:55:15)
+
+set toolbars=nonavigation,nomenu,tabs
+set followhints=0
+set hintchars="qwerasdfzcxv"
+set hintinputs="label,value,name"
+set showhinttexts=on
+set hintmatching=fuzzy
+set newtab="all"
+
+" vim: set ft=vimperator:

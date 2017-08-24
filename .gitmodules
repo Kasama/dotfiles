@@ -25,3 +25,6 @@
 [submodule "i3"]
 	path = i3
 	url = ./i3
+[submodule "vimperator"]
+	path = vimperator
+	url = ./vimperator

@@ -25,6 +25,8 @@
 		, "./X/Xauthority": "~/.Xauthority"
 		, "./yaourt/yaourtrc": "~/.yaourtrc"
 		, "./i3": "~/.config/i3"
+		, "./vimperator": "~/.vimperator"
+			, "./vimperator/.vimperatorrc": "~/.vimperatorrc"
 	}
 	, "commands": [
 		"[[ ! -L ~/nvim ]] && ln -s ~/.config/nvim ~/nvim"
