@@ -2,6 +2,7 @@
 	"directories": [
 		"~/.config"
 		, "~/.config/terminator"
+		, "~/.config/termite"
 	]
 	, "link": {
 		"prezto": "~/.zprezto"
@@ -19,6 +20,7 @@
 		, "emerald-config": "~/.emerald"
 		, "scripts": "~/scripts"
 		, "terminator/config": "~/.config/terminator/config"
+		, "termite/config": "~/.config/termite/config"
 		, "git/gitconfig": "~/.gitconfig"
 		, "./X/xinitrc": "~/.xinitrc"
 		, "./X/xresources": "~/.Xresources"
