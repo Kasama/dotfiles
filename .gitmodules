@@ -24,7 +24,7 @@
 	url = git@github.com:Kasama/gtk-config
 [submodule "i3"]
 	path = i3
-	url = ./i3
+	url = git@github.com:Kasama/i3
 [submodule "vimperator"]
 	path = vimperator
-	url = ./vimperator
+	url = git@github.com:Kasama/vimperator
