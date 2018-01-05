@@ -43,6 +43,7 @@ case $session in
 		exec fusion-icon # compiz manager
 		;;
 	i3)
+		exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 		exec i3
 		;;
 	steam)
