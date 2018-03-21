@@ -28,3 +28,6 @@
 [submodule "vimperator"]
 	path = vimperator
 	url = git@github.com:Kasama/vimperator
+[submodule "polybar"]
+	path = polybar
+	url = git@github.com:Kasama/polybar

@@ -55,6 +55,7 @@ BUILD_NOCONFIRM=1  # Only prompt for editing files
 
 # Command
 #PACMAN="pacman"
+#PacmanBin /usr/bin/powerpill
 #DIFFEDITCMD="vimdiff"
 
 # pacdiffviewer

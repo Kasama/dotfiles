@@ -27,6 +27,7 @@
 		, "./X/Xauthority": "~/.Xauthority"
 		, "./yaourt/yaourtrc": "~/.yaourtrc"
 		, "./i3": "~/.config/i3"
+		, "./polybar": "~/.config/polybar"
 		, "./vimperator": "~/.vimperator"
 			, "./vimperator/.vimperatorrc": "~/.vimperatorrc"
 	}
