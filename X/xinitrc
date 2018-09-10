@@ -43,7 +43,13 @@ case $session in
 		exec fusion-icon # compiz manager
 		;;
 	i3)
+    # Unlock gnome-keyring
+    dbus-update-activation-environment --systemd DISPLAY
+    eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+		export SSH_AUTH_SOCK
+    # Enable gnome authentication agent
 		exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+    # Run i3 window manager
 		exec i3
 		;;
 	steam)

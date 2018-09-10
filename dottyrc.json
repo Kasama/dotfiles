@@ -3,6 +3,7 @@
 		"~/.config"
 		, "~/.config/terminator"
 		, "~/.config/termite"
+		, "~/.config/dunst"
 	]
 	, "link": {
 		"prezto": "~/.zprezto"
@@ -21,6 +22,7 @@
 		, "scripts": "~/scripts"
 		, "terminator/config": "~/.config/terminator/config"
 		, "termite/config": "~/.config/termite/config"
+    , "dunst/dunstrc": "~/.config/dunst/dunstrc"
     , "kitty/kitty.conf": "~/.config/kitty/kitty.conf"
 		, "git/gitconfig": "~/.gitconfig"
 		, "./X/xinitrc": "~/.xinitrc"
