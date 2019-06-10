@@ -1,0 +1,31 @@
+"" jk in insert mode exits it
+inoremap jk <Esc>
+
+" Press Space to turn off highlighting and clear any message being displayed.
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>l
+
+"" Using H and L as 0 and $
+nnoremap H 0
+vnoremap H 0
+nnoremap L $
+vnoremap L $
+
+"" Toggle listchars
+nnoremap <silent> <leader>c :set list!<CR>
+
+"" Better Scrolling
+nnoremap <C-J> <C-E>
+nnoremap <C-K> <C-Y>
+
+"" Move between buffers
+nnoremap <silent> <Tab><Tab> gt
+nnoremap <silent> <S-Tab><S-Tab> gT
+nnoremap <silent> <leader>bd :q<CR>
+
+" Copy and Paste from X env
+nnoremap <silent> <leader>y "+y
+nnoremap <silent> <leader>Y "+Y
+
+set hlsearch
+set number
+set relativenumber

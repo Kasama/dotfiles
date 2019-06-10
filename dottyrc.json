@@ -30,9 +30,13 @@
 		, "./X/Xauthority": "~/.Xauthority"
 		, "./yaourt/yaourtrc": "~/.yaourtrc"
 		, "./i3": "~/.config/i3"
+		, "./kwm": "~/.kwm"
+		, "./kwm/skhdrc": "~/.skhdrc"
+		, "./kwm/chunkwmrc": "~/.chunkwmrc"
 		, "./polybar": "~/.config/polybar"
 		, "./vimperator": "~/.vimperator"
 			, "./vimperator/.vimperatorrc": "~/.vimperatorrc"
+    , "./ideavim": "~/.ideavim"
 	}
 	, "commands": [
 		"[[ ! -L ~/nvim ]] && ln -s ~/.config/nvim ~/nvim"
