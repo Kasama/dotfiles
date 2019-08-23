@@ -6,7 +6,7 @@
 	url = ../prezto
 [submodule "dotty"]
 	path = dotty
-	url = ../dotty
+	url = http://github.com/vibhavp/dotty
 [submodule "compiz-config"]
 	path = compiz-config
 	url = ../compiz-config
