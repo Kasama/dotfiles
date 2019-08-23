@@ -1,33 +1,33 @@
 [submodule "nvim"]
 	path = nvim
-	url = git@github.com:Kasama/nvim
+	url = ../nvim
 [submodule "prezto"]
 	path = prezto
-	url = git@github.com:Kasama/prezto
+	url = ../prezto
 [submodule "dotty"]
 	path = dotty
-	url = git@github.com:vibhavp/dotty
+	url = ../dotty
 [submodule "compiz-config"]
 	path = compiz-config
-	url = git@github.com:Kasama/compiz-config
+	url = ../compiz-config
 [submodule "emerald-config"]
 	path = emerald-config
-	url = git@github.com:Kasama/emerald-config
+	url = ../emerald-config
 [submodule "scripts"]
 	path = scripts
-	url = git@github.com:Kasama/scripts
+	url = ../scripts
 [submodule "tmux"]
 	path = tmux
-	url = git@github.com:Kasama/tmux
+	url = ../tmux
 [submodule "gtk-config"]
 	path = gtk-config
-	url = git@github.com:Kasama/gtk-config
+	url = ../gtk-config
 [submodule "i3"]
 	path = i3
-	url = git@github.com:Kasama/i3
+	url = ../i3
 [submodule "vimperator"]
 	path = vimperator
-	url = git@github.com:Kasama/vimperator
+	url = ../vimperator
 [submodule "polybar"]
 	path = polybar
-	url = git@github.com:Kasama/polybar
+	url = ../polybar
