@@ -31,3 +31,6 @@
 [submodule "polybar"]
 	path = polybar
 	url = ../polybar
+[submodule "emacs/emacs.d"]
+	path = emacs/emacs.d
+	url = git@github.com:Kasama/spacemacs
