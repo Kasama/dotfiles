@@ -5,6 +5,7 @@
     , "~/.config/termite"
     , "~/.config/dunst"
     , "~/.config/kitty"
+    , "~/.screenlayout"
   ]
   , "link": {
     "prezto": "~/.zprezto"
@@ -30,7 +31,7 @@
     , "git/gitconfig": "~/.gitconfig"
     , "./X/xinitrc": "~/.xinitrc"
     , "./X/xresources": "~/.Xresources"
-    , "./X/Xauthority": "~/.Xauthority"
+    , "./X/screenlayout.sh": "~/.screenlayout/default.sh"
     , "./yaourt/yaourtrc": "~/.yaourtrc"
     , "./i3": "~/.config/i3"
     , "./kwm": "~/.kwm"

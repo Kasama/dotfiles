@@ -1,5 +1,5 @@
 [user]
-	email = ralegro@bol.com.br
+	email = robertoaall@gmail.com
 	name = Kasama
 [credential]
 	helper = gnome-keyring
@@ -16,3 +16,7 @@
 	grog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
 [core]
 	autocrlf = input
+[url "ssh://git@git.topfreegames.com/"]
+	insteadOf = https://git.topfreegames.com/
+[diff]
+	renameLimit = 1070

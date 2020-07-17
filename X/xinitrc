@@ -43,6 +43,10 @@ case $session in
 		exec fusion-icon # compiz manager
 		;;
 	i3)
+    # Set key repeat
+    xset r rate 200 35
+    # Load default monitor layout
+    $HOME/.screenlayout/default.sh
     # Unlock gnome-keyring
     dbus-update-activation-environment --systemd DISPLAY
     eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
