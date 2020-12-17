@@ -45,8 +45,14 @@ case $session in
 	i3)
     # Set key repeat
     xset r rate 200 35
+    # xmodmap ~/.speedswapper
     # Load default monitor layout
     $HOME/.screenlayout/default.sh
+    # Enable UIM as input method
+    # export GTK_IM_MODULE='uim'
+    # export QT_IM_MODULE='uim'
+    # uim-xim &
+    # export XMODIFIERS='@im=uim'
     # Unlock gnome-keyring
     dbus-update-activation-environment --systemd DISPLAY
     eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)

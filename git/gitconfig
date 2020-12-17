@@ -1,6 +1,7 @@
 [user]
 	email = robertoaall@gmail.com
 	name = Kasama
+	signkey = 9DDF4616B7E7C055
 [credential]
 	helper = gnome-keyring
 [merge]
@@ -20,3 +21,5 @@
 	insteadOf = https://git.topfreegames.com/
 [diff]
 	renameLimit = 1070
+# [commit]
+# 	gpgsign = true
