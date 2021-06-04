@@ -19,7 +19,11 @@
 	autocrlf = input
 [url "ssh://git@git.topfreegames.com/"]
 	insteadOf = https://git.topfreegames.com/
+[url "ssh://git@git.topfreegames.com/"]
+	insteadOf = http://git.topfreegames.com/
 [diff]
 	renameLimit = 1070
 # [commit]
 # 	gpgsign = true
+[pull]
+	rebase = false

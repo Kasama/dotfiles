@@ -2,7 +2,7 @@
 inoremap jk <Esc>
 
 " Press Space to turn off highlighting and clear any message being displayed.
-nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>l
+nnoremap <silent> <Space> :noh<CR>l
 
 "" Using H and L as 0 and $
 nnoremap H 0
@@ -29,3 +29,4 @@ nnoremap <silent> <leader>Y "+Y
 set hlsearch
 set number
 set relativenumber
+set visualbell t_vb=
