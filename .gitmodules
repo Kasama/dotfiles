@@ -33,7 +33,7 @@
 	url = ../polybar
 [submodule "emacs/emacs.d"]
 	path = emacs/emacs.d
-	url = git@github.com:Kasama/spacemacs
+	url = git@github.com:Kasama/doom-emacs.git
 [submodule "firefox/proton-fix"]
 	path = firefox/proton-fix
 	url = git@github.com:black7375/Firefox-UI-Fix.git
