@@ -48,6 +48,8 @@ case $session in
     # xmodmap ~/.speedswapper
     # Load default monitor layout
     $HOME/.screenlayout/default.sh
+    # alternative Home Setup
+    # # export MONITOR=DVI-I-0
     # Enable UIM as input method
     # export GTK_IM_MODULE='uim'
     # export QT_IM_MODULE='uim'

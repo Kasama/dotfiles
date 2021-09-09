@@ -27,3 +27,5 @@
 # 	gpgsign = true
 [pull]
 	rebase = false
+[url "ssh://"]
+	insteadOf = https://
