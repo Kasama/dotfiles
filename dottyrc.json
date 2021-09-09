@@ -33,6 +33,7 @@
     "./X/xinitrc": "~/.xinitrc",
     "./X/xresources": "~/.Xresources",
     "./X/screenlayout.sh": "~/.screenlayout/default.sh",
+    "./X/speedswapper": "~/.speedswapper",
     "./yaourt/yaourtrc": "~/.yaourtrc",
     "./i3": "~/.config/i3",
     "./kwm": "~/.kwm",

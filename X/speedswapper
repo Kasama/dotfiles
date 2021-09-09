@@ -1,0 +1,4 @@
+! remove Lock = Caps_Lock
+! keysym Caps_Lock = Escape
+clear Lock
+keycode 66 = Escape NoSymbol Escape
