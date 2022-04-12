@@ -5,9 +5,11 @@
     "~/.config/termite",
     "~/.config/dunst",
     "~/.config/kitty",
+    "~/.config/kmonad",
     "~/.screenlayout"
   ],
   "link": {
+    "./kmonad-config/config.kbd": "~/.config/kmonad/config.kbd",
     "prezto": "~/.zprezto",
     "prezto/runcoms/zlogin": "~/.zlogin",
     "prezto/runcoms/zlogout": "~/.zlogout",
@@ -45,5 +47,8 @@
     "./vimperator/.vimperatorrc": "~/.vimperatorrc",
     "./ideavim": "~/.ideavim"
   },
-  "commands": ["[[ ! -L ~/nvim ]] && ln -s ~/.config/nvim ~/nvim"]
+  "commands": [
+    "[[ ! -L ~/nvim ]] && ln -s ~/.config/nvim ~/nvim",
+    "pushd ./kmonad-config && make && popd "
+  ]
 }
