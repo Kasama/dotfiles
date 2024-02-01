@@ -37,3 +37,6 @@
 [submodule "firefox/proton-fix"]
 	path = firefox/proton-fix
 	url = git@github.com:black7375/Firefox-UI-Fix.git
+[submodule "kmonad-config"]
+	path = kmonad-config
+	url = git@github.com:Kasama/kmonad-config/
