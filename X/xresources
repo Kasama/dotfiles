@@ -103,3 +103,5 @@ URxvt.letterSpace: -1
 !*.color15:      #eeeeec
 *.color7:       #d3d7cf
 *.color15:      #555555
+
+theme=dark
