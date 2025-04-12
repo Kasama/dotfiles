@@ -1,0 +1,62 @@
+# Ghostty Config
+#
+#
+
+# Fonts {
+font-family = ""
+font-family = "Fira Code Medium"
+# font-family-bold = Fira Code Bold
+font-family-italic = ""
+font-family-italic = "OperatorMono Nerd Font"
+# bold_italic_font Operator Mono
+
+font-size = 12
+adjust-cell-height = 5%
+adjust-cell-width = 0%
+
+# }
+
+theme = DoomOne
+
+# # Colors {
+foreground = #dedede
+background = #31363b
+
+# # black
+palette = 0=#2e3436
+palette = 8=#555753
+
+# # red
+palette = 1=#cc0000
+palette = 9=#ef2929
+
+# # green
+palette = 2=#4e9a06
+palette = 10=#8ae234
+
+# # yellow
+palette = 3=#c4a000
+palette = 11=#fce94f
+
+# # blue
+palette = 4=#3465a4
+palette = 12=#729fcf
+
+# # magenta
+palette = 5=#75507b
+palette = 13=#ad7fa8
+
+# # cyan
+palette = 6=#06989a
+palette = 14=#34e2e2
+
+# # white
+palette = 7=#d3d7cf
+palette = 15=#555555
+# #}
+
+window-decoration = false
+
+#shell-integration-features = no-cursor
+cursor-style = block
+cursor-color = #dddddd

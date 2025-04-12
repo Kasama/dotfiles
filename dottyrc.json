@@ -9,6 +9,7 @@
     "~/.config/git",
     "~/.config/bin",
     "~/.config/rofi",
+    "~/.config/ghostty",
     "~/.screenlayout"
   ],
   "link": {
@@ -51,6 +52,7 @@
     "./vimperator": "~/.vimperator",
     "./vimperator/.vimperatorrc": "~/.vimperatorrc",
     "./ideavim": "~/.ideavim",
+    "./ghostty": "~/.config/ghostty",
     "./bin/config.yaml": "~/.config/bin/config.yaml"
   },
   "commands": [
