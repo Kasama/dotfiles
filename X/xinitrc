@@ -19,7 +19,7 @@
 
 #exec fusion-icon
 
-export TERMINAL='kitty'
+export TERMINAL='ghostty'
 
 session=${1:-i3}
 
@@ -55,6 +55,7 @@ case $session in
     # Enable UIM as input method
     # export GTK_IM_MODULE='uim'
     # export QT_IM_MODULE='uim'
+    # GTK_IM_MODULE=simple
     # uim-xim &
     # export XMODIFIERS='@im=uim'
     # Unlock gnome-keyring
