@@ -45,6 +45,7 @@
     "./vimperator/.vimperatorrc": "~/.vimperatorrc",
     "./ideavim": "~/.ideavim",
     "./ghostty": "~/.config/ghostty",
+    "./scripts/fehbg": "~/.fehbg",
     "./bin/config.yaml": "~/.config/bin/config.yaml"
   },
   "commands": [
