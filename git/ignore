@@ -1,1 +1,4 @@
 .tmux-session-marker
+.envrc
+.env
+mise.toml

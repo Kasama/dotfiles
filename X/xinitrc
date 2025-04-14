@@ -59,12 +59,13 @@ case $session in
     # uim-xim &
     # export XMODIFIERS='@im=uim'
     # Unlock gnome-keyring
-    eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+    # eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
     # dbus-update-activation-environment --systemd DISPLAY
     # dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
-		export SSH_AUTH_SOCK
+    eval $(ssh-agent)
+    export SSH_AUTH_SOCK
     # Enable gnome authentication agent
-		exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+		# exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
     # Run i3 window manager
 
     # Load system Xinitrc files
