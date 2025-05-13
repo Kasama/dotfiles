@@ -40,3 +40,6 @@
 [submodule "kmonad-config"]
 	path = kmonad-config
 	url = git@github.com:Kasama/kmonad-config/
+[submodule "clipmenu/clipmenu"]
+	path = clipmenu/clipmenu
+	url = https://github.com/cdown/clipmenu

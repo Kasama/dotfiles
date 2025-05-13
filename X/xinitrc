@@ -21,6 +21,9 @@
 
 export TERMINAL='ghostty'
 
+# Due to a bug with nvidia driver, we need to set this variable to be able to use WEBKIT apps properly
+export WEBKIT_DISABLE_DMABUF_RENDERER=1
+
 session=${1:-i3}
 
 case $session in

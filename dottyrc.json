@@ -7,6 +7,7 @@
     "~/.config/bin",
     "~/.config/rofi",
     "~/.config/ghostty",
+    "~/.config/clipmenu",
     "~/.screenlayout"
   ],
   "link": {
@@ -45,6 +46,7 @@
     "./vimperator/.vimperatorrc": "~/.vimperatorrc",
     "./ideavim": "~/.ideavim",
     "./ghostty": "~/.config/ghostty",
+    "./clipmenu/conf": "~/.config/clipmenu",
     "./scripts/fehbg": "~/.fehbg",
     "./bin/config.yaml": "~/.config/bin/config.yaml"
   },

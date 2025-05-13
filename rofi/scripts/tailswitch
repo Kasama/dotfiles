@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $# -eq 1 ]; then
+  v=$(echo "$1" | cut -d':' -f2 | tr -d ' ')
+  tailscale switch "$v" >/dev/null 2>&1 &
+  exit 0
+fi
+
+tailscale switch --list | sed '1d' | awk '{ print "Switch Tailscale to " $3 ": " $2 }'

@@ -63,7 +63,7 @@ configuration {
 	window-thumbnail: false;
 
 	/*---------- Combi settings ----------*/
-  combi-modi: "window,drun,files";
+  combi-modi: "window,drun,files,tailswitch";
   combi-hide-mode-prefix: true;
   combi-display-format: "{mode} {text}";
 
@@ -80,6 +80,7 @@ configuration {
 	display-drun: "󰌧";
 	display-combi: "Combi";
   display-calc: "󰃬";
+  display-tailswitch: "󱂇";
 	display-keys: "Keys";
 	display-filebrowser: "Files";
 
