@@ -8,7 +8,7 @@
 
 configuration {
 	/*---------- General setting ----------*/
-	modi: "combi,calc";
+	modi: "combi,calc,discord-timestamps";
 	case-sensitive: false;
 	cycle: true;
 	filter: "";

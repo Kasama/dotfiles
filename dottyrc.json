@@ -8,6 +8,7 @@
     "~/.config/rofi",
     "~/.config/ghostty",
     "~/.config/clipmenu",
+    "~/.config/systemd",
     "~/.screenlayout"
   ],
   "link": {
@@ -48,7 +49,8 @@
     "./ghostty": "~/.config/ghostty",
     "./clipmenu/conf": "~/.config/clipmenu",
     "./scripts/fehbg": "~/.fehbg",
-    "./bin/config.yaml": "~/.config/bin/config.yaml"
+    "./bin/config.yaml": "~/.config/bin/config.yaml",
+    "./systemd/xsession.target": "~/.config/systemd/user/xsession.target"
   },
   "commands": [
     "[[ ! -L ~/nvim ]] && ln -s ~/.config/nvim ~/nvim",

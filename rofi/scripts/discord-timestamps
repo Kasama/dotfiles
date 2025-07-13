@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# rofi-discord-timestamp – no-freeze version
+set -euo pipefail
+
+# clipboard helper ------------------------------------------------------------
+copy() {
+  if command -v wl-copy >/dev/null; then
+    printf '%s' "$1" | wl-copy
+  elif command -v xsel >/dev/null; then
+    printf '%s' "$1" | xsel --clipboard --input
+  elif command -v xclip >/dev/null; then
+    printf '%s' "$1" | xclip -selection clipboard -in -quiet >/dev/null 2>&1 &
+  else
+    return 1
+  fi
+}
+
+case "${ROFI_RETV:-0}" in
+  0)  printf '\0prompt\x1fEnter datetime\n'
+    echo "Type a date/time and press Enter"
+    ;;
+  2)  input="$1"
+    if ! epoch=$(date -d "$input" +%s 2>/dev/null); then
+      echo "Could not parse: $input"; exit 0
+    fi
+    printf '\0prompt\x1fChoose Discord format\n'
+    printf '%s - time\0info\x1f<t:%s:t>\n' "$(date -d "@$epoch" '+%H:%M')" "$epoch"
+    printf '%s - full compact\0info\x1f<t:%s:f>\n' "$(date -d "@$epoch" '+%B %d %Y %H:%M')" "$epoch"
+    printf 'relative\0info\x1f<t:%s:R>\n' "$epoch"
+    printf '%s - full\0info\x1f<t:%s:F>\n' "$(date -d "@$epoch" '+%A, %B %d %Y %H:%M')" "$epoch"
+    printf '%s - date long\0info\x1f<t:%s:D>\n' "$(date -d "@$epoch" '+%A, %B %d %Y')" "$epoch"
+    printf '%s - date short\0info\x1f<t:%s:d>\n' "$(date -d "@$epoch" '+%d/%m/%Y')" "$epoch"
+    printf '%s - time seconds\0info\x1f<t:%s:T>\n' "$(date -d "@$epoch" '+%H:%M:%S')" "$epoch"
+    ;;
+  1)  token="$ROFI_INFO"
+    if ! copy "$token"; then
+      notify "Clipboard utility not found" "$token"
+    fi
+    printf '\0quit\n'
+    ;;
+esac
+exit 0
