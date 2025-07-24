@@ -2,8 +2,8 @@
 	email = robertoaall@gmail.com
 	name = Kasama
 	signkey = 9DDF4616B7E7C055
-[credential]
-	helper = gnome-keyring
+# [credential]
+	# helper = gnome-keyring
 [merge]
 	tool = vimdiff
   conflictstyle = diff3
