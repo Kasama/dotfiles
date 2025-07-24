@@ -63,7 +63,7 @@
   "custom/microphone": {
     "format": "{}",
     "return-type": "json",
-    "interval": 5,
+    "interval": 2,
     "exec": "~/.config/polybar/mic-control.sh",
     "on-click": "~/.config/polybar/mic-control.sh toggle",
     "on-click-right": "~/.config/polybar/mic-control.sh toggle"
