@@ -9,7 +9,6 @@
     "~/.config/ghostty",
     "~/.config/clipmenu",
     "~/.config/systemd",
-    "~/.config/hypr",
     "~/.screenlayout"
   ],
   "link": {
@@ -39,6 +38,7 @@
     "./X/speedswapper": "~/.speedswapper",
     "./yaourt/yaourtrc": "~/.yaourtrc",
     "./hypr": "~/.config/hypr",
+    "./waybar": "~/.config/waybar",
     "./i3": "~/.config/i3",
     "./kwm": "~/.kwm",
     "./kwm/skhdrc": "~/.skhdrc",
