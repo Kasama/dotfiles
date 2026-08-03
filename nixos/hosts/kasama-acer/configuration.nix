@@ -25,6 +25,8 @@
 
   programming.enable = true;
 
+  work.enable = true;
+
   networking.hostName = "kasama-acer"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -62,7 +64,8 @@
   users.users.${config.username} = {
     isNormalUser = true;
     description = "${config.username}";
-    extraGroups = [ "networkmanager" "wheel" "uinput" "input" "docker" ];
+    extraGroups =
+      [ "networkmanager" "wheel" "uinput" "input" "docker" "dialout" ];
     packages = with pkgs; [ ];
     shell = pkgs.zsh;
   };
@@ -93,6 +96,11 @@
     publish.enable = true;
     publish.userServices = true;
   };
+  system.nssModules = pkgs.lib.optional true pkgs.nssmdns;
+  system.nssDatabases.hosts = pkgs.lib.optionals true (pkgs.lib.mkMerge [
+    (pkgs.lib.mkBefore [ "mdns4_minimal [NOTFOUND=return]" ]) # before resolve
+    (pkgs.lib.mkAfter [ "mdns4" ]) # after dns
+  ]);
 
   services.openssh = {
     enable = true;
@@ -103,8 +111,19 @@
     };
   };
   networking.firewall = {
-    allowedTCPPorts = [ 22 47984 47989 47999 47990 48010 ];
-    allowedUDPPorts = [ 22 47984 47989 47999 47990 48010 ];
+    allowedTCPPorts = [ 22 47984 47989 47999 47990 48010 5353 ];
+    allowedUDPPorts = [ 22 47984 47989 47999 47990 48010 5353 ];
+  };
+
+  networking.nameservers =
+    [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
+
+  services.resolved = {
+    enable = true;
+    dnssec = "true";
+    domains = [ "~." ];
+    fallbackDns = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
+    dnsovertls = "true";
   };
 
   # Configure console keymap

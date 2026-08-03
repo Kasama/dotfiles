@@ -4,11 +4,14 @@
   config = lib.mkIf config.programming.enable {
     environment.systemPackages = with pkgs; [
       # languages
+      # dotnet-sdk_10
+      dotnetCorePackages.sdk_8_0_3xx-bin
       gcc
       gnumake
       go
       nodejs
       python3
+      uv
       rustup
 
       # programming tools
@@ -17,6 +20,8 @@
       neovim
       ripgrep
       tmux
+      git-lfs
+      android-tools
     ];
   };
 }

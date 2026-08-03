@@ -1,7 +1,5 @@
 { config, lib, pkgs, ... }: {
-  options = {
-    desktop.hyprland.enable = lib.mkEnableOption "enable hyprland";
-  };
+  options = { desktop.hyprland.enable = lib.mkEnableOption "enable hyprland"; };
 
   config = lib.mkIf config.desktop.hyprland.enable {
     desktop.kind = "wayland";
@@ -28,6 +26,7 @@
       hyprlock
       hyprpaper
       hyprpolkitagent
+      hyprshot
       libnotify
       nwg-look
       pulseaudio

@@ -16,6 +16,7 @@
     desktop.hyprland.enable = lib.mkDefault false;
     desktop.games.enable = lib.mkDefault config.desktop.enable;
     desktop.steam.enable = lib.mkDefault config.desktop.enable;
+    # desktop.dactyl-remote-control.enable = lib.mkDefault config.desktop.enable;
 
     environment.systemPackages = let
       xOrWaylandPkgs = if config.desktop.kind == "wayland" then
@@ -24,29 +25,33 @@
         with pkgs; [ xorg.xinit xorg.xset xsel ];
     in with pkgs;
     [
-      feh
-      ghostty
-      keepassxc
-      owncloud-client
-      telegram-desktop
-      discord
-      feishin
-      spotify
-      networkmanagerapplet
-      sunshine
-      pulseaudio
       alsa-utils
-      evtest
-      libinput
       blueman
       bluez
+      discord
+      evtest
+      f3
+      feh
+      feishin
+      firefox
+      ghostty
+      gnome-network-displays
       kdePackages.breeze
       kdePackages.breeze-gtk
+      keepassxc
+      libinput
+      networkmanagerapplet
+      owncloud-client
+      pulseaudio
+      spotify
+      sunshine
+      telegram-desktop
       vimix-icon-theme
       xfce.thunar
-      xfce.thunar-volman
       xfce.thunar-archive-plugin
       xfce.thunar-media-tags-plugin
+      xfce.thunar-volman
+      vlc
       zathura
     ] ++ xOrWaylandPkgs;
 
@@ -57,7 +62,10 @@
     };
 
     networking.firewall = {
-      allowedTCPPorts = [ 47984 47989 47990 48010 ];
+      trustedInterfaces = [ "p2p-wl+" ];
+
+      allowedTCPPorts = [ 47984 47989 47990 48010 7236 7250 ];
+      allowedUDPPorts = [ 7236 5353 ];
       allowedUDPPortRanges = [
         {
           from = 47998;
@@ -86,5 +94,11 @@
     ];
 
     hardware.bluetooth.enable = true;
+
+    programs.appimage = {
+      enable = true;
+      binfmt = true;
+      package = pkgs.appimage-run.override { extraPkgs = pkgs: [ pkgs.icu ]; };
+    };
   };
 }

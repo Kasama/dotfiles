@@ -22,7 +22,14 @@
     mise
   ];
 
-  programs.ssh = { enable = true; };
+  programs.ssh = {
+    enable = true;
+    extraConfig = ''
+      Host *
+        ServerAliveInterval 60
+        ServerAliveCountMax 3
+    '';
+  };
 
   services.ssh-agent = { enable = true; };
 
