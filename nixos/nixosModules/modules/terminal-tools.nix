@@ -8,12 +8,14 @@
       ansible
       arp-scan
       bat
+      bubblewrap
       diff-so-fancy
       dig
       dust
       file
       fzf
       git
+      gnupg
       gnumake
       imagemagick
       htop
