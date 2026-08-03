@@ -96,6 +96,9 @@
     publish.enable = true;
     publish.userServices = true;
   };
+
+  services.upower.enable = true;
+  security.rtkit.enable = true;
   system.nssModules = pkgs.lib.optional true pkgs.nssmdns;
   system.nssDatabases.hosts = pkgs.lib.optionals true (pkgs.lib.mkMerge [
     (pkgs.lib.mkBefore [ "mdns4_minimal [NOTFOUND=return]" ]) # before resolve
@@ -120,10 +123,12 @@
 
   services.resolved = {
     enable = true;
-    dnssec = "true";
-    domains = [ "~." ];
-    fallbackDns = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
-    dnsovertls = "true";
+    settings.Resolve = {
+      DNSSEC = true;
+      Domains = [ "~." ];
+      FallbackDNS = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
+      DNSOverTLS = true;
+    };
   };
 
   # Configure console keymap

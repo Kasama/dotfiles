@@ -8,7 +8,7 @@
   imports = [ ];
 
   home.packages = with pkgs; [
-    (inputs.zen-browser.packages."${system}".default)
+    (inputs.zen-browser.packages.${pkgs.system}.default)
     awscli2
     discord
     eza
@@ -24,11 +24,11 @@
 
   programs.ssh = {
     enable = true;
-    extraConfig = ''
-      Host *
-        ServerAliveInterval 60
-        ServerAliveCountMax 3
-    '';
+    enableDefaultConfig = false;
+    settings."*" = {
+      ServerAliveInterval = 60;
+      ServerAliveCountMax = 3;
+    };
   };
 
   services.ssh-agent = { enable = true; };

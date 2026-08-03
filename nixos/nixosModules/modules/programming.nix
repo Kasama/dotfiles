@@ -4,8 +4,8 @@
   config = lib.mkIf config.programming.enable {
     environment.systemPackages = with pkgs; [
       # languages
-      # dotnet-sdk_10
-      dotnetCorePackages.sdk_8_0_3xx-bin
+      # .NET 8 SDK
+      dotnetCorePackages.sdk_8_0_4xx-bin
       gcc
       gnumake
       go

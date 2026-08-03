@@ -18,6 +18,7 @@
     "clock"
   ],
   "modules-right": [
+    "idle_inhibitor",
     "pulseaudio",
     "tray",
     "battery",

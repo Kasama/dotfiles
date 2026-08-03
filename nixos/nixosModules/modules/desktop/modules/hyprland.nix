@@ -1,5 +1,13 @@
-{ config, lib, pkgs, ... }: {
-  options = { desktop.hyprland.enable = lib.mkEnableOption "enable hyprland"; };
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+{
+  options = {
+    desktop.hyprland.enable = lib.mkEnableOption "enable hyprland";
+  };
 
   config = lib.mkIf config.desktop.hyprland.enable {
     desktop.kind = "wayland";
@@ -58,7 +66,7 @@
         };
 
         initial_session = {
-          command = "zsh --login -c hyprland";
+          command = "zsh --login -c start-hyprland";
           user = "${config.username}";
         };
         terminal.vt = 1;
