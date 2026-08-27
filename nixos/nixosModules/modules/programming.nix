@@ -9,6 +9,15 @@
       gcc
       gnumake
       go
+      lua5_4
+      lua54Packages.luarocks
+      (runCommand "lua5.1-bin" { } ''
+        mkdir -p $out/bin
+        ln -s ${lua5_1}/bin/lua $out/bin/lua5.1
+        ln -s ${lua5_1}/bin/lua $out/bin/lua51
+        ln -s ${lua5_1}/bin/luac $out/bin/luac5.1
+        ln -s ${lua5_1}/bin/luac $out/bin/luac51
+      '')
       nodejs
       python3
       uv
@@ -20,6 +29,7 @@
       neovim
       ripgrep
       tmux
+      tree-sitter
       git-lfs
       android-tools
     ];

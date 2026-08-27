@@ -25,8 +25,10 @@
     };
 
     environment.systemPackages = with pkgs; [
+      bibata-cursors
       brightnessctl
       dunst
+      graphite-cursors
       hypridle
       hyprland-qt-support
       hyprland-qtutils
@@ -37,14 +39,13 @@
       hyprshot
       libnotify
       nwg-look
+      pavucontrol
       pulseaudio
+      quickshell
       rofi
       rofi-calc
       rose-pine-cursor
-      bibata-cursors
-      graphite-cursors
       volumeicon
-      pavucontrol
       waybar
       xdg-desktop-portal-hyprland
     ];

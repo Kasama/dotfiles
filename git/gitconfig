@@ -1,7 +1,8 @@
 [user]
 	email = robertoaall@gmail.com
 	name = Kasama
-	signkey = 9DDF4616B7E7C055
+	signkey = 8048A9C94C2CD7D3!
+	signingkey = 8048A9C94C2CD7D3!
 # [credential]
 	# helper = gnome-keyring
 [merge]
@@ -40,3 +41,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[commit]
+	gpgsign = true

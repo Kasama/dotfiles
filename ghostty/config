@@ -16,7 +16,7 @@ adjust-cell-width = 0%
 
 # }
 
-theme = DoomOne
+# theme = DoomOne
 
 # # Colors {
 foreground = #dedede
