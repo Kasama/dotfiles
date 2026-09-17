@@ -24,6 +24,11 @@
       url = "github:kasama/dactyl-remote-control";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    tailscale-multitail = {
+      url = "github:kasama-jay/tailscale-multitail/master";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
