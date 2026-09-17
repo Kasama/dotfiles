@@ -26,7 +26,7 @@
     };
 
     tailscale-multitail = {
-      url = "github:kasama-jay/tailscale-multitail/v1.1.0";
+      url = "github:kasama-jay/tailscale-multitail/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
