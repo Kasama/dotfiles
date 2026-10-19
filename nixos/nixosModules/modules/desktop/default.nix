@@ -43,6 +43,7 @@
       networkmanagerapplet
       owncloud-client
       pulseaudio
+      plezy
       spotify
       sunshine
       telegram-desktop

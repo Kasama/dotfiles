@@ -1,6 +1,12 @@
 # vim: sw=2 ts=2 et
 
-{ config, pkgs, inputs, lib, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
+}:
 
 {
   nixpkgs.config.allowUnfree = true;
@@ -8,7 +14,6 @@
   imports = [ ];
 
   home.packages = with pkgs; [
-    (inputs.zen-browser.packages.${pkgs.system}.default)
     awscli2
     discord
     eza
@@ -19,6 +24,7 @@
     owncloud-client
     ripgrep
     kubectl
+    kubectx
     mise
   ];
 
@@ -31,7 +37,9 @@
     };
   };
 
-  services.ssh-agent = { enable = true; };
+  services.ssh-agent = {
+    enable = true;
+  };
 
   xdg.enable = true;
 
